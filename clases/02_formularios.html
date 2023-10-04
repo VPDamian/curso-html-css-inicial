@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1> Formulario </h1>
+    <form name="contacto" method="GET" action="http://127.0.0.1:5500/backend/recibo/formulario.php" enctype="multipart/form-data">
+
+        <!-- Información Personal -->
+        <fieldset>
+            <legend> Información Personal </legend>
+
+            <div>
+                <label for="nombre"> Nombre: </label>
+                <input name="nombre" type="text" autocomplete placeholder="Ingrese su Nombre" required>
+            </div>
+
+            <div>
+                <label for="nombre"> Apellido: </label>
+                <input name="apellido" type="text" autofocus placeholder="Apellido">
+            </div>
+
+            <div>
+                <label for="edad"> Edad: </label>
+                <input name="edad" type="number" required>
+
+                <label for="edad"> DNI: </label>
+                <input name="dni" type="number" value="112223333" disabled>
+            </div>
+        </fieldset>
+
+        <!-- Información de la cuenta usuario -->
+        <fieldset>
+            <legend> Información de la Cuenta </legend>
+            <input name="contraseña" type="password" autofocus placeholder="Ingrese su contraseña">
+            <!-- Hidden -->
+            <input type="hidden" name="token" value="11222333">
+        </fieldset>
+
+        <!-- checkbox -->
+        <label for="accesorio">Accesorio para el Auto</label>
+        <input type="checkbox" name="accesorio" value="1" checked>
+        <input type="checkbox" name="accesorio" value="2">
+        <input type="checkbox" name="accesorio" value="3">
+        <br><br><!-- Mala practica -->
+
+
+        <!-- Radio button -->
+        <label for="marca">Marca:</label>
+        <span>Toyota</span> <input type="radio" name="marca" value="toyota">
+        <span>Ford</span> <input type="radio" name="marca" value="ford">
+        <span>Fiat</span> <input type="radio" name="marca" value="fiat">
+        <br><br><!-- Mala practica -->
+
+        <!-- File -->
+        <input type="file" name="archivo" multiple>
+        <br><br><!-- Mala practica -->
+
+        <!-- Select -->
+        <label for="marcaSelect">Marca:</label>
+        <select name="marcaSelect">
+            <option value="toyota">Toyota</option>
+            <option value="ford" selected>Ford</option>
+            <option value="fiat">Fiat</option>
+        </select>
+        <br><br><!-- Mala practica -->
+
+        <!-- Select Optgroup -->
+        <label for="auto"> Seleccione un Auto </label> 
+        <select name="auto" multiple>
+            <optgroup label="Ford">
+                <option value="ka"> Ka </option>
+                <option value="focus"> Focus</option>
+            </optgroup>
+            <optgroup label="Chevrolet">
+                <option value="agile"> Agile </option>
+                <option value="onix"> Onix </option>
+            <optgroup>
+        </select>
+        <br><br><!-- Mala practica -->
+
+        <!-- Image & submit -->
+        <input type="image" src="../img/boton-descarga.png" width="50">
+        <input type="submit" value="Enviar (1)">
+        <button type="submit">Enviar (2)</button>
+        <br><br><!-- Mala practica -->
+
+        <!-- Reset -->
+        <input type="reset" value="Resetea todo el formulario">
+
+    </form>
+
+</body>
+
+</html>
