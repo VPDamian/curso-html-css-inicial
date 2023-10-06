@@ -33,9 +33,70 @@
         </nav>
     </header>
 
-    <h1> Contacto </h1>
+    <main>
+        <h1> Formulario de Contacto </h1>
+        <form action="" method="GET">
 
-    <h2> Subtitulo </h2>
+            <!-- Envio de Mail -->
+            <fieldset>
+                <legend> Mail </legend>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" cols="30" rows="10"></textarea>
+
+            </fieldset>
+
+            <!-- Opciones -->
+            <fieldset>
+                <legend> Opciones </legend>
+
+                <div>
+                    <label for="checkboxMultiple">checkbox Multiple:</label>
+                    <span>Valor 1:</span><input name="checkboxMultiple" type="checkbox" value="1">
+                    <span>Valor 2:</span><input name="checkboxMultiple" type="checkbox" value="2">
+                    <span>Valor 3:</span><input name="checkboxMultiple" type="checkbox" value="3" checked>
+                    <span>Valor 4:</span><input name="checkboxMultiple" type="checkbox" value="4">
+                </div>
+
+
+                <div>
+                    <label for="radioMultiple">radio Multiple:</label>
+                    <span>Valor 1:</span><input name="radioMultiple" type="radio" value="1">
+                    <span>Valor 2:</span><input name="radioMultiple" type="radio" value="2">
+                    <span>Valor 3:</span><input name="radioMultiple" type="radio" value="3" checked>
+                    <span>Valor 4:</span><input name="radioMultiple" type="radio" value="4">
+                </div>
+
+            </fieldset>
+
+            <button type="submit"> Enviar Formulario </button>
+            
+        </form>
+
+    </main>
+
+    <footer>
+        <div>
+            <img src="" alt="Imagen de instagram">
+            <img src="" alt="Imagen de facebook">
+            <img src="" alt="Imagen de twitter (X)">
+            <img src="" alt="Imagen de mail">
+        </div>
+
+        <span> Copyright 2023 </span>
+
+        <div>
+            <h4> Texto Extra </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolore pariatur autem animi nihil nobis aspernatur quidem minus? Sit veritatis totam nostrum cumque repellendus officia porro id itaque voluptatum ad.</p>
+        </div>
+        
+    </footer>
     
 </body>
 </html>
