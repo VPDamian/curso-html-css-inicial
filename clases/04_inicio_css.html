@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        * {
+            color: blue;
+        }
+
+        p#parrafo-2 {
+            color: blueviolet;
+        }
+
+        p.text-verde, h1.text-verde {
+            color: green;
+        }
+
+        p {
+            color: red;
+            background-color: black;
+        }
+
+        div h2 {
+            color: #bc6464
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:yellow"> Titutlo Principal </h1>
+    <h1 class="text-verde"> Titutlo Principal </h1>
+
+    <div>
+        <span> texto 1 </span>
+        <h2> subtitulo 1 </h2>
+    </div>
+
+    <h2> subtitulo 2 </h2>
 
     <p> texto 1 </p>
-    <p> texto 2 </p>
+    <p id="parrafo-2" class="text-verde" style="color:yellow"> texto 2 </p>
+    <p> texto 3 </p>
+    <p class="text-verde"> texto 4 </p>
+    <p> texto 5 </p>
 
     <span> texto 3 </span>
     
