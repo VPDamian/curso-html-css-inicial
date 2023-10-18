@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        section {
+            width: 500px;
+            margin: auto;
+        }
+
+        p {
+            padding: 0px 15px;
+        }
+
+        .container {
+            height: 100px;
+            background-color: rgb(188, 156, 217);
+            border: 1px solid black;
+            overflow-y: scroll;
+        }
+
+        .container-floated {
+            height: 300px;
+            background-color: rgb(120, 20, 213);
+            margin-top: 10px;
+        }
+
+        .child {
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+            border: 1px solid black;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .cleared {
+            clear: both;
+        }
+
+        .container-position {
+            height: 300px;
+            background-color: rgb(120, 20, 213);
+            margin: 10px 0px;
+
+            position: relative;
+        }
+
+        .position {
+            position: relative;
+            background-color: red;
+            z-index: 2;
+        }
+
+        .position-relative {
+            position: relative;
+            left: 20px;
+            top: 35px;
+            z-index: 1;
+        }
+
+        .position-absolute {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .position-fixed {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .position-fixed-2 {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Flujo de los elementos </h1>
+
+    <section>
+        <h2> Subtitulo </h2>
+        <p> Parrafo 1 </p>
+        <p> Parrafo 2  <span> Texto 1 </span> <span> Texto 2 </span> </p>
+
+        <!-- Overflow -->
+        <h2>Overflow</h2>
+        <div class="container">
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, deserunt totam? Atque aut ad totam similique sed harum deleniti eveniet. Fugiat vitae ducimus earum non, in sit illum eos suscipit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptas error similique sit qui nemo aut ut, architecto et beatae alias fuga deserunt minus, dolorum nostrum, fugit fugiat nihil voluptatum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, autem quisquam. Eveniet, pariatur nobis voluptatem dolores fugiat quod modi ab nihil numquam, magni a excepturi? Incidunt magni culpa qui nesciunt.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error iste dolores esse aliquid dolor quod, laboriosam ut nam nobis aperiam officia, natus nisi reiciendis. Error molestiae perferendis exercitationem nam! Ipsam?
+            </p>
+        </div>
+
+        <!-- Float and Clear -->
+        <h2> Float and Clear</h2>
+        <div class="container-floated">
+            <div class="child float-right">1</div>
+            <div class="child cleared">2</div>
+            <div class="child float-right">3</div>
+            <div class="child float-right">4</div>
+        </div>
+
+        <!-- Position -->
+        <h2> Position </h2>
+        <div class="container-position">
+            <div class="child position-relative"> 1 </div>
+            <div class="child position"> 2 </div>
+            <div class="child position-absolute"> 3 </div>
+            <div class="child position-fixed"> 4 </div>
+            <div class="child position-fixed-2"> 5 </div>
+        </div>
+
+    </section>
+
+    
+    
+</body>
+</html>
