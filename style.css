@@ -2,33 +2,65 @@ body {
     margin: 0px;
 }
 
-header {
-    background-color: rgb(169, 99, 234);
-    padding: 10px;
 
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    box-sizing: border-box;
-}
+/* Header */
+    header {
+        background-color: rgb(169, 99, 234);
+        padding: 10px;
 
-header a {
-    text-decoration: none;
-    color: rgb(211, 197, 197);
-}
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1;
+    }
 
-ul li {
-    display: inline;
-}
+    header a {
+        text-decoration: none;
+        color: rgb(211, 197, 197);
+    }
 
-ul {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    margin: 10px;
-}
+    ul li {
+        display: inline;
+    }
 
-main {
-    margin-top: 2.5em;
-}
+    ul {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin: 10px;
+    }
+
+    main {
+        margin-top: 2.4em;
+    }
+
+
+/* Section Home */
+    section#home {
+        min-height: 80vh;
+        background-image: url('./img/home-art.avif');
+        background-size: cover;
+        background-attachment: fixed;
+        
+        
+        display: flex;
+        align-items: end;
+
+        /* position: relative; */
+    }
+
+    section div#autor {
+        color: rgb(39, 39, 39);
+        max-width: 300px;
+        padding: 20px;
+
+        /* position: absolute;
+        left: 0px;
+        bottom: 0px; */
+    }
+
+    section div#autor p {
+        margin: 0px;
+    }
