@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            background-color: green;
+            padding: 7px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #item1 {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #item2 {
+            flex-grow: 0;
+        }
+
+        #header-top {
+            background-color: violet;
+            padding: 7px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #brand {
+            flex-grow: 1;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #user {
+            flex-grow: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #brand img {
+            height: 1.5rem;
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .separator {
+            color: white;
+            padding: 0 10px;
+        }
+
+        ul {
+            background-color: green;
+            list-style-type: none;
+            margin: 0px;
+            padding: 7px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- <div class="container">
+        <div id="item1">Item 1</div>
+        <div id="item2">Item 2</div>
+    </div> -->
+
+    <header>
+        <div id="header-top">
+            <div id="brand"> 
+                <img src="../img/placeholder.png" alt="Logo"> <span> Empresa </span>
+            </div>
+
+            <div id="user">
+                <a href="#">
+                    Login
+                </a>
+
+                <span class="separator"> | </span>
+
+                <a href="#">
+                    Registrate!
+                </a>
+
+                <span class="separator"> | </span>
+
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"> Seccion 1 </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion 2 </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion 3 </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion 4 </a>
+                </li>
+                <li>
+                    <a href="#"> Seccion 5 </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
