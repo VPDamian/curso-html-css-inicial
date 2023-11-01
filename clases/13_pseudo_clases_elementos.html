@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            background-color: red;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;  
+        }
+
+        a:active {
+            color: blueviolet;  
+        }
+
+        a:hover {
+            font-size: 3rem;
+            background-color: orange;
+        }
+
+        input:focus {
+            color: blueviolet;
+        }
+
+        ul li:nth-child(3n-1) {
+            color: red;
+        }
+
+        ul li:nth-last-child(2) {
+            color: blue;
+        }
+
+        ul li:first-child {
+            color: green;
+        }
+
+        ul li:last-child {
+            color: yellow;
+        }
+
+        span:nth-of-type(3) {
+            color: red;
+        }
+
+        .container:empty {
+            background-color: aqua;
+        }
+
+        input:disabled {
+            background-color: yellow;
+        }
+
+        .test::first-letter {
+            color: blue;
+        }
+
+        .test::first-line {
+            color: red;
+        }
+
+        .test::before {
+            content: 'Al comienzo del parrafoo';
+            color: green;
+        }
+
+        .test::after {
+            content: 'Al final del parrafo';
+            color: orangered;
+        }
+
+        .test::selection {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="test">
+        Hola Mundo! <br>
+        Chau Mundo! <br>
+        Final
+    </p>
+    
+    <p>
+        <span> s1 </span>
+        <span> s2 </span>
+        <b> b1 </b>
+        <span> s3 </span>
+    </p>
+
+    
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+    <a href="https://www.wikipedia.com">wikipedia!</a>
+    <a href="https://www.google.com">google!</a>
+
+    <input type="text" autofocus value="Eduardo">
+
+    <input type="text" value="Denis" disabled>
+
+    <div class="container"></div>
+
+    <div class="container">
+        container 1
+    </div>
+
+
+
+    
+</body>
+</html>
