@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            min-height: 10vh;
+            background-color: blueviolet;
+        }
+
+        main {
+            background-color: bisque;
+        }
+
+        footer {
+            min-height: 10vh;
+            background-color: black;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            height: calc(80vh/3);
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+
+        #container-1 {
+            background-color: red;
+        }
+
+        #container-2 {
+            background-color: green;
+        }
+
+        #container-3 {
+            background-color: blue;
+        }
+
+        /* Para tablets de mas de 600px y menos de 1024 */
+        @media screen and (min-width:600px){
+            section {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container {
+                min-width: calc(100%/2);
+            }
+
+            #container-3 {
+                min-width: 100%
+            }
+        }
+
+
+        /* Para notebooks de mas de 1024px */
+        @media screen and (min-width:1024px){
+
+            .container {
+                min-width: calc(100%/3);
+            }
+
+            #container-3 {
+                min-width: calc(100%/3);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div id="container-1" class="container">1</div>
+            <div id="container-2" class="container">2</div>
+            <div id="container-3" class="container">3</div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            min-height: 10vh;
+            background-color: blueviolet;
+        }
+
+        main {
+            background-color: bisque;
+        }
+
+        footer {
+            min-height: 10vh;
+            background-color: black;
+        }
+
+        section {
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .container {
+            width: calc(100%/3);
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+
+        #container-1 {
+            background-color: red;
+        }
+
+        #container-2 {
+            background-color: green;
+        }
+
+        #container-3 {
+            background-color: blue;
+        }
+
+
+        /* Para tablets de menos de 1024px y mas de 600px */
+        @media screen and (max-width:1024px) {
+            #container-2 {
+                display: none;
+            }
+
+            .container {
+                width: calc(100%/2);
+            }
+        }
+
+        /* Para celulares de menos de 600px */
+        @media screen and (max-width:600px) {
+            #container-1 {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div id="container-1" class="container">1</div>
+            <div id="container-2" class="container">2</div>
+            <div id="container-3" class="container">3</div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
